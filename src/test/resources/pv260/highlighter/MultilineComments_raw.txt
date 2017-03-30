@@ -1,0 +1,18 @@
+package integration;
+
+/**
+ * This is just a basic javadoc
+ * No keywords like int, if etc. should be highlighted here
+ */
+public class MultilineComments {
+
+    /** Singleline javadocs also exist */
+    public /*Comments can be in the strangest places*/ void method() {
+        String thingsCanGetWildWhenMixingStringsAndComments
+                = "Quotation  /* comment inside" +/*Commentception*/ " the string */ " +/*
+                 comments here
+                 // more comments*/ "and some more string";//no more
+
+    }
+
+}

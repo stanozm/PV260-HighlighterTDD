@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<link type="text/css" rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body class="textWrap">
+<div class="textWrap">
+<table cellspacing="0" cellpadding="0" class="sourceTable">
+<tr><td class="src"><pre class="src"><span class="keyword">package</span> integration;</pre></td></tr>
+<tr><td class="src"><pre class="src"></pre></td></tr>
+<tr><td class="src"><pre class="src"><span class="keyword">public</span> <span class="keyword">class</span> SinglelineComments {</pre></td></tr>
+<tr><td class="src"><pre class="src"></pre></td></tr>
+<tr><td class="src"><pre class="src">    <span class="keyword">public</span> <span class="keyword">void</span> method() { <span class="comment">//it is rather straightforward</span></pre></td></tr>
+<tr><td class="src"><pre class="src">        <span class="keyword">int</span> i = 10; <span class="comment">// rest of the line is ignored,</span></pre></td></tr>
+<tr><td class="src"><pre class="src">        <span class="keyword">while</span> (i &lt 50) { <span class="comment">// however &lt &amp &gt still need to be escaped</span></pre></td></tr>
+<tr><td class="src"><pre class="src">            System.out.println(i);</pre></td></tr>
+<tr><td class="src"><pre class="src">            continue; <span class="comment">// that first continue should be tagged as keyword,</span></pre></td></tr>
+<tr><td class="src"><pre class="src">            <span class="comment">//not the one in this comment though</span></pre></td></tr>
+<tr><td class="src"><pre class="src">        }</pre></td></tr>
+<tr><td class="src"><pre class="src">    }</pre></td></tr>
+<tr><td class="src"><pre class="src"></pre></td></tr>
+<tr><td class="src"><pre class="src">}</pre></td></tr>
+</table>
+</div>
+    </body>
+</html>

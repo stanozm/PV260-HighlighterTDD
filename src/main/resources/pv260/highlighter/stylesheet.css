@@ -1,0 +1,32 @@
+.textWrap{
+	display:block;
+	overflow: auto;
+	white-space:nowrap;
+}
+
+.sourceTable {
+	display: inline-block;
+	font-family: monospace;
+}
+
+
+.keyword{
+	color: blue;
+}
+
+.String{
+	color:red;
+}
+
+.char{
+	color:orange;
+}
+
+.comment{
+	color:green;
+}
+
+pre.src {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

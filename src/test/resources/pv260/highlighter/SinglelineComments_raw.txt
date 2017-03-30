@@ -1,0 +1,14 @@
+package integration;
+
+public class SinglelineComments {
+
+    public void method() { //it is rather straightforward
+        int i = 10; // rest of the line is ignored,
+        while (i < 50) { // however < & > still need to be escaped
+            System.out.println(i);
+            continue; // that first continue should be tagged as keyword,
+            //not the one in this comment though
+        }
+    }
+
+}

@@ -1,0 +1,26 @@
+package integration;
+
+public class NoComments {
+
+    public void method(int parameter) {
+        String string = "some string & char which needs excaping";
+        if (10 > 5 || true && false) {
+            System.out.println("The > also needs escaping");
+        }
+        int isAKeywod;
+        double isAlsoAKeyword;
+        Object isNotAKeyword;
+        char thisShouldBeHighlighted = 'x';
+        char charIsNotKeywordIfDirectlyFollowedByMoreText;
+        String quotesCanBeEscaped = "doesnt end the string \" see";
+        String escapesCanBeEscapedToo = "ends the string \\";
+        String charQuotesAreNotSpecialIfInString = " quotes 'a' are just regular chars";
+        char sameGoesForDoubleQuotesAndChars = '"';
+        char cahrQuotesCanBeEscaped = '\'';
+        char thereAreAlsoUnicodeEscapes = '\u03A9';
+        char andEscapes = '\n';
+        char andEscapedEscapes = '\\';
+        String commentSlashesAreIgnoredInStringLiterals = "both these // and these /* foo */ ";
+    }
+
+}
